@@ -15,7 +15,8 @@ for file in *.json; do
   rm -fr "packs/$packname"
   mkdir -p "packs/$packname"
   cd "packs/$packname"
-  cp "$rootpath"/"$file" ./pack.json
-  cp "$rootpath"/factorioroot.txt .
+  cp "$rootpath/$file" ./pack.json
+  cp "$rootpath/factorioroot.txt" .
   bash "$processpath" "$packname"
+  cp -r "$packname" "$rootpath/SEJS"
 done

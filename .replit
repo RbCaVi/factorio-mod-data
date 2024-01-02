@@ -1,4 +1,4 @@
-run = "cowsay Configure me!"
+run = "bash getmods.sh"
 
 [nix]
 channel = "stable-22_11"

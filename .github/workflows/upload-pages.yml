@@ -16,6 +16,8 @@ jobs:
         run: find .lua
       - name: Echo path
         run: echo "$PATH"
+      - name: Which lua
+        run: which lua
       - name: Checkout
         uses: actions/checkout@v4
         with:

@@ -5,7 +5,7 @@ rootpath=$(realpath .)
 if [[ ! -d factorio ]]; then 
   rm -f factorio.tar.xz
   rm -fr factorio
-  wget --progress=dot 'https://factorio.com/get-download/latest/demo/linux64' -O factorio.tar.xz
+  wget --progress=dot:giga 'https://factorio.com/get-download/latest/demo/linux64' -O factorio.tar.xz
   tar -xJf factorio.tar.xz
   echo "$rootpath/factorio" > factorioroot.txt
 fi

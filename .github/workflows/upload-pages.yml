@@ -18,6 +18,8 @@ jobs:
         run: echo "$PATH"
       - name: Which lua
         run: which lua
+      - name: Lua version
+        run: lua -v
       - name: Checkout
         uses: actions/checkout@v4
         with:

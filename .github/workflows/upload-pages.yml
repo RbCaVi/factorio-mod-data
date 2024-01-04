@@ -56,6 +56,8 @@ jobs:
           name: packs.tar
       - name: Unarchive packs
         run: tar -xf packs.tar
+      - name: Copy mods to SEJS
+        run: bash copymods.sh
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:

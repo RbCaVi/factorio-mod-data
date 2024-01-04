@@ -54,7 +54,6 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: packs.tar
-          path: packs.tar
       - name: Unarchive packs
         run: tar -xf packs.tar
       - name: Upload artifact

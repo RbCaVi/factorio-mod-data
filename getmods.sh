@@ -18,5 +18,4 @@ for file in *.json; do
   cp "$rootpath/$file" ./pack.json
   cp "$rootpath/factorioroot.txt" .
   bash "$processpath" "$packname"
-  cp -r "$packname" "$rootpath/SEJS"
 done

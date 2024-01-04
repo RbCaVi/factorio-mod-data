@@ -7,8 +7,9 @@ if [[ ! -d factorio ]]; then
   rm -fr factorio
   wget --progress=dot:giga 'https://factorio.com/get-download/latest/demo/linux64' -O factorio.tar.xz
   tar -xJf factorio.tar.xz
-  echo "$rootpath/factorio" > factorioroot.txt
 fi
+
+echo "$rootpath/factorio" > factorioroot.txt
 
 for file in *.json; do
   packname="${file%.json}"

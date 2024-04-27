@@ -11,6 +11,8 @@ fi
 
 echo "$rootpath/factorio" > factorioroot.txt
 
+npm i yauzl@2.10.0
+
 for file in *.json; do
   packname="${file%.json}"
   rm -fr "packs/$packname"

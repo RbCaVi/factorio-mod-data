@@ -1,5 +1,5 @@
 #!/bin/bash
-processpath=$(realpath lua-factorio-data/process.sh)
+processpath=$(realpath lua-factorio-data/process.mjs)
 rootpath=$(realpath .)
 
 if [[ ! -d factorio ]]; then 
@@ -18,6 +18,6 @@ for file in *.json; do
   pushd "packs/$packname"
     cp "$rootpath/$file" ./pack.json
     cp "$rootpath/factorioroot.txt" .
-    bash "$processpath" "$packname"
+    node "$processpath" "$packname"
   popd
 done

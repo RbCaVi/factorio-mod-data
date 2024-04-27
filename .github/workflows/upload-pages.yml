@@ -32,7 +32,7 @@ jobs:
       - name: Get mods
         run: bash getmods.sh
       - name: Archive packs
-        run: tar -cf packs.tar packs
+        run: tar -cvf packs.tar packs
       - name: Upload packs artifact
         uses: actions/upload-artifact@v4
         with:
@@ -55,7 +55,7 @@ jobs:
         with:
           name: packs.tar
       - name: Unarchive packs
-        run: tar -xf packs.tar
+        run: tar -xvf packs.tar
       - name: Copy mods to SEJS
         run: bash copymods.sh
       - name: Upload artifact

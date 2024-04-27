@@ -2,8 +2,8 @@
 rootpath=$(realpath .)
 
 
-for file in packs/*/; do
-  pushd "$file"
-    cp -r * "$rootpath/SEJS"
+for file in `ls packs`; do
+  pushd "packs/$file"
+    cp -r mod "$rootpath/SEJS/$file"
   popd
 done

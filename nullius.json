@@ -1,0 +1,14 @@
+{
+  "name":"nullius",
+  "mods":{
+    "nullius":{"version":"1.9.0","assets":false},
+    "alien-biomes":{"version":"0.6.8"},
+    "angelsrefining":{"version":"0.12.6","assets":false},
+    "angelssmelting":{"version":"0.6.22","assets":false},
+    "boblogistics":{"version":"1.2.1","assets":false},
+    "angelspetrochem":{"version":"0.9.25","assets":false},
+    "boblibrary":{"version":"1.2.0","assets":false},
+    "base":{"assets":false},
+    "core":{"assets":false}
+  }
+}

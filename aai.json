@@ -1,0 +1,9 @@
+{
+  "name":"SE",
+  "mods":{
+    "aai-containers":{"version":"0.2.11","assets":false},
+    "aai-industry":{"version":"0.5.22","assets":false},
+    "base":{"assets":false},
+    "core":{"assets":false}
+  }
+}

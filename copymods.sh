@@ -3,7 +3,7 @@ rootpath=$(realpath .)
 
 
 for file in `ls packs`; do
-  name=$(cat "packs/$file/pack.json"|jq '.name')
+  name=$(cat "packs/$file/pack.json"|jq -r '.name')
   cp -r "packs/$file/$name" "$rootpath/SEJS/$file"
 done
 

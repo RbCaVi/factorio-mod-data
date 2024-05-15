@@ -14,6 +14,12 @@ echo "$rootpath/factorio" > factorioroot.txt
 npm i yauzl@2.10.0
 
 for file in *.json; do
+  if [[ "$file" == "package-lock.json" ]]; then
+    continue
+  fi
+  if [[ "$file" == "package.json" ]]; then
+    continue
+  fi
   packname="${file%.json}"
   rm -fr "packs/$packname"
   mkdir -p "packs/$packname"

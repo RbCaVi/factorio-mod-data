@@ -58,6 +58,8 @@ jobs:
         run: tar -xvf packs.tar
       - name: Copy mods to SEJS
         run: bash copymods.sh
+      - name: Show files
+        run: find ./SEJS/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:

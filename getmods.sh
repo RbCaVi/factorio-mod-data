@@ -19,7 +19,6 @@ for file in *.json; do
   mkdir -p "packs/$packname"
   cp "$file" "packs/$packname/pack.json"
   pushd "packs/$packname"
-    cp "$rootpath/$file" ./pack.json
     cp "$rootpath/factorioroot.txt" .
     node "$processpath"
   popd

@@ -1,7 +1,0 @@
-[submodule "lua-factorio-data"]
-	path = lua-factorio-data
-	url = https://github.com/RbCaVi/lua-factorio-data
-[submodule "sejs"]
-	path = SEJS
-	url = https://github.com/RbCaVi/SEJS
-	branch = viewer

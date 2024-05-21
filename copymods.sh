@@ -1,11 +1,14 @@
 #!/bin/bash
 rootpath=$(realpath .)
 
-mkdir -p "assets"
+mkdir assets
 
 for file in `ls packs`; do
   name=$(cat "packs/$file/pack.json"|jq -r '.name')
-  mv "packs/$file/$name" "$rootpath/assets/$file"
+  mv -T "packs/$file/$name" "assets/$file"
 done
 
-cp modsjson.txt "$rootpath/assets/mods.json"
+mkdir modassets
+mv -t modassets assets/*/assets/* # move the assets for all the mods to one folder
+rmdir assets/*/assets
+mv -T modassets assets/assets # put them in assets/ for github pages

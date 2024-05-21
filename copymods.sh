@@ -9,6 +9,6 @@ for file in `ls packs`; do
 done
 
 mkdir modassets
-mv -t modassets assets/*/assets/* # move the assets for all the mods to one folder
+mv -tf modassets assets/*/assets/* # move the assets for all the mods to one folder
 rmdir assets/*/assets
 mv -T modassets assets/assets # put them in assets/ for github pages

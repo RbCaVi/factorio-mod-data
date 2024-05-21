@@ -1,8 +1,8 @@
 {
   "name":"aai",
   "mods":{
-    "aai-containers":{"version":"0.2.11","assets":false},
-    "aai-industry":{"version":"0.5.22","assets":false},
+    "aai-containers":{"version":"0.2.11"},
+    "aai-industry":{"version":"0.5.22"},
     "base":{"assets":false},
     "core":{"assets":false}
   }

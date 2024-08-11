@@ -1,0 +1,12 @@
+{
+  "name": "industrial-revolution-3",
+  "mods": {
+    "IndustrialRevolution3": {"version": "3.1.29"},
+    "IndustrialRevolution3Assets1": {"version": "1.1.10"},
+    "IndustrialRevolution3Assets2": {"version": "1.1.2"},
+    "IndustrialRevolution3Assets3": {"version": "1.1.7"},
+    "IndustrialRevolution3Assets4": {"version": "1.1.0"},
+    "base": {"assets": false},
+    "core": {"assets": false}
+  }
+}

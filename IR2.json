@@ -1,0 +1,8 @@
+{
+  "name": "industrial-revolution-2",
+  "mods": {
+    "IndustrialRevolution": {"version": "2.3.2"},
+    "base": {"assets": false},
+    "core": {"assets": false}
+  }
+}

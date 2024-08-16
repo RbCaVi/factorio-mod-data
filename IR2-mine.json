@@ -1,0 +1,12 @@
+{
+  "name": "industrial-revolution-2",
+  "mods": {
+    "IndustrialRevolution": {"version": "2.3.2"},
+    "deadlock-beltboxes-loaders": {"version": "2.4.2"},
+    "IndustrialRevolutionStacking": {"version": "1.0.1"},
+    "IndustrialDisplayPlates": {"version": "1.1.4"},
+    "textplates": {"version": "0.6.10"},
+    "base": {"assets": false},
+    "core": {"assets": false}
+  }
+}
